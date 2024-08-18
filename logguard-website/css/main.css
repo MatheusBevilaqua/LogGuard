@@ -3,7 +3,11 @@
 @import url(partials/typography.css);
 @import url(partials/buttons.css);
 @import url(partials/spacing.css);
+@import url(partials/menu.css);
 @import url(partials/animations.css);
+
+/* IMPORTANDO ESTILZAÇÃO DAS PAGINAS DO SITE */
+@import url(pages/welcome.css);
 
 *,
 *:after,
@@ -14,6 +18,17 @@
     color: white;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body {
+    width: 100vw;
+    height: 100vh;
     background: var(--darkness-blue);
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
 }
