@@ -1,0 +1,19 @@
+/* IMPORTANDO OUTROS ARQUIVOS CSS */
+@import url(partials/colors.css);
+@import url(partials/typography.css);
+@import url(partials/buttons.css);
+@import url(partials/spacing.css);
+@import url(partials/animations.css);
+
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: var(--darkness-blue);
+}
