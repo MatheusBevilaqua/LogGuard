@@ -3,6 +3,9 @@
     height: 100%;
     background: url(../../img/fundo-home.png) no-repeat center center;
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
 }
 
 .welcome-father{
@@ -38,6 +41,48 @@
     width: 100%;
 }
 
-.welcome-logo{
-    width: 80%;
+    .welcome-logo{
+        width: 80%;
+    }
+
+/* RESPONSIVIDADE DA PAGE WELCOME */
+@media (max-width: 1140px){
+    .welcome-father{
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .welcome-child{
+        width: 100%;
+        height: 50%;
+    
+        display: flex;
+    
+    
+    }
+    
+    .welcome-child-logo{
+        width: 100%;
+        height: 50%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-logo{
+        width: 100%;
+    }
+}   
+
+@media (max-width: 960px){
+
+}
+
+@media (max-width: 540px){
+
 }
