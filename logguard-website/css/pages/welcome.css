@@ -4,3 +4,40 @@
     background: url(../../img/fundo-home.png) no-repeat center center;
     background-size: cover;
 }
+
+.welcome-father{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-child{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+
+}
+
+.welcome-child-logo{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-2);
+    width: 100%;
+}
+
+.welcome-logo{
+    width: 80%;
+}

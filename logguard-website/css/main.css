@@ -1,6 +1,7 @@
 /* IMPORTANDO OUTROS ARQUIVOS CSS */
 @import url(partials/colors.css);
 @import url(partials/typography.css);
+@import url(partials/layout.css);
 @import url(partials/buttons.css);
 @import url(partials/spacing.css);
 @import url(partials/menu.css);
@@ -8,6 +9,7 @@
 
 /* IMPORTANDO ESTILZAÇÃO DAS PAGINAS DO SITE */
 @import url(pages/welcome.css);
+@import url(pages/quem-somos.css);
 
 *,
 *:after,
@@ -16,6 +18,27 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
+}
+
+/* LARGURA DA BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* FUNDA DA BARRA DE ROLAGEM */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* COR DA BARRA DE MEDIDA */
+::-webkit-scrollbar-thumb {
+    background: var(--darked-blue);
+    border-radius: 3px;
+}
+
+/* HOVER DA BARRA DE MEDIDA */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
 }
 
 html{
@@ -31,4 +54,9 @@ body {
 section{
     width: 100vw;
     height: 100vh;
+    padding-top: 75px;
+}
+
+ul{
+    list-style: none;
 }

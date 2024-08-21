@@ -1,43 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+*,
+*:after,
+*:before {
+    font-family: "Sora", sans-serif;
+}
+
 @media (min-width: 1440px) {
     h1 {
-        font-family: "Sora", sans-serif;
         font-size: 64px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h2 {
-        font-family: "Sora", sans-serif;
         font-size: 52px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h3 {
-        font-family: "Sora", sans-serif;
         font-size: 36px;
         line-height: 120%;
         font-weight: 300;
     }
 
     h4 {
-        font-family: "Sora", sans-serif;
         font-size: 24px;
         line-height: 130%;
         font-weight: 400;
     }
 
     h5 {
-        font-family: "Sora", sans-serif;
         font-size: 18px;
         line-height: 140%;
         font-weight: 400;
     }
 
-    p{
-        font-family: "Sora", sans-serif;
+    p, a{
         font-size: 18px;
         font-weight: 300;        
     }
@@ -45,42 +45,36 @@
 
 @media (max-width: 1440px) {
     h1 {
-        font-family: "Sora", sans-serif;
         font-size: 56px;
         line-height: 100%;
         font-weight: 300; 
     }
 
     h2 {
-        font-family: "Sora", sans-serif;
         font-size: 48px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h3 {
-        font-family: "Sora", sans-serif;
         font-size: 32px;
         line-height: 120%;
         font-weight: 300;
     }
 
     h4 {
-        font-family: "Sora", sans-serif;
         font-size: 20px;
         line-height: 130%;
         font-weight: 300;
     }
 
     h5 {
-        font-family: "Sora", sans-serif;
         font-size: 16px;
         line-height: 140%;
         font-weight: 300;
     }
 
-    p{
-        font-family: "Sora", sans-serif;
+    p, a{
         font-size: 16px;
         font-weight: 300;        
     }
@@ -88,42 +82,36 @@
 
 @media (max-width: 1140px) {
     h1 {
-        font-family: "Sora", sans-serif;
         font-size: 48px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h2 {
-        font-family: "Sora", sans-serif;
         font-size: 40px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h3 {
-        font-family: "Sora", sans-serif;
         font-size: 28px;
         line-height: 120%;
         font-weight: 300;
     }
 
     h4 {
-        font-family: "Sora", sans-serif;
         font-size: 20px;
         line-height: 130%;
         font-weight: 300;
     }
 
     h5 {
-        font-family: "Sora", sans-serif;
         font-size: 16px;
         line-height: 140%;
         font-weight: 300;
     }
 
-    p{
-        font-family: "Sora", sans-serif;
+    p, a{
         font-size: 14px;
         font-weight: 300;
     }
@@ -131,42 +119,36 @@
 
 @media (max-width: 960px) {
     h1 {
-        font-family: "Sora", sans-serif;
         font-size: 40px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h2 {
-        font-family: "Sora", sans-serif;
         font-size: 32px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h3 {
-        font-family: "Sora", sans-serif;
         font-size: 24px;
         line-height: 120%;
         font-weight: 300;
     }
 
     h4 {
-        font-family: "Sora", sans-serif;
         font-size: 18px;
         line-height: 130%;
         font-weight: 300;
     }
 
     h5 {
-        font-family: "Sora", sans-serif;
         font-size: 14px;
         line-height: 140%;
         font-weight: 300;
     }
 
-    p{
-        font-family: "Sora", sans-serif;
+    p, a{
         font-size: 14px;
         font-weight: 300;        
     }
@@ -174,42 +156,36 @@
 
 @media (max-width: 540px) {
     h1 {
-        font-family: "Sora", sans-serif;
         font-size: 32px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h2 {
-        font-family: "Sora", sans-serif;
         font-size: 28px;
         line-height: 100%;
         font-weight: 300;
     }
 
     h3 {
-        font-family: "Sora", sans-serif;
         font-size: 20px;
         line-height: 120%;
         font-weight: 300;
     }
 
     h4 {
-        font-family: "Sora", sans-serif;
         font-size: 16px;
         line-height: 130%;
         font-weight: 300;
     }
 
     h5 {
-        font-family: "Sora", sans-serif;
         font-size: 12px;
         line-height: 140%;
         font-weight: 300;
     }
 
-    p{
-        font-family: "Sora", sans-serif;
+    p, a{
         font-size: 12px;
         font-weight: 300;        
     }
