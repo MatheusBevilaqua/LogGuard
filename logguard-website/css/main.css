@@ -9,7 +9,7 @@
 
 /* IMPORTANDO ESTILZAÇÃO DAS PAGINAS DO SITE */
 @import url(pages/welcome.css);
-@import url(pages/quem-somos.css);
+@import url(pages/aboutUs.css);
 
 *,
 *:after,
@@ -49,12 +49,13 @@ body {
     width: 100vw;
     height: 100vh;
     background: var(--darkness-blue);
+    overflow-x: hidden;
 }
 
 section{
     width: 100vw;
     height: 100vh;
-    padding-top: 75px;
+    padding-top: 70px;
 }
 
 ul{

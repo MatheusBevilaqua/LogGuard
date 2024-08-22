@@ -35,3 +35,9 @@
         max-width: 1440px;
     }
 }
+
+
+#section-space{
+    width: 100%;
+    height: 20vh;
+}

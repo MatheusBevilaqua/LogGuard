@@ -41,9 +41,9 @@
     width: 100%;
 }
 
-    .welcome-logo{
-        width: 80%;
-    }
+.welcome-logo{
+    width: 70%;
+}
 
 /* RESPONSIVIDADE DA PAGE WELCOME */
 @media (max-width: 1140px){
@@ -53,36 +53,69 @@
     
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
     .welcome-child{
         width: 100%;
-        height: 50%;
+        height: 30%;
     
         display: flex;
-    
-    
     }
-    
+
     .welcome-child-logo{
         width: 100%;
-        height: 50%;
-    
+        height: 30%;
+
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .welcome-logo{
-        width: 100%;
+        width: 60%;
+    }
+
+    .welcome-card-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-card-titulo{
+        text-align: center;
+    }
+
+    .welcome-card-argument{
+        text-align: center;
     }
 }   
 
 @media (max-width: 960px){
-
+    .welcome-logo{
+        width: 65%;
+    }
 }
 
 @media (max-width: 540px){
+
+    .welcome-child-logo{
+        display: none;
+    }
+
+    .welcome-card-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-card-titulo{
+        text-align: center;
+    }
+
+    .welcome-card-argument{
+        text-align: center;
+    }
 
 }
