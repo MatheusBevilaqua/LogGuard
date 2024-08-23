@@ -8,23 +8,39 @@
 </head>
 <body>
 
-    <header>
-        <nav class="margin-web">
+    <!-- --// NAVBAR DESKTOP - MOBILE //-- -->
 
-            <div class="nav-logo">
-                <img class="nav-logo-icon" src="./svg/iceberg 2.svg" alt="#Logo-LogGuard">
+    <header class="header">
+        <nav class="navbar margin-web">
+            <div class="nav-logo-father">
+                <img class="nav-logo" src="./svg/iceberg 2.svg" alt="">
             </div>
-
-            <ul class="nav-list">
-                <li class="nav-link"><a href="#">Início</a></li>
-                <li class="nav-link"><a href="#">Sobre Nós</a></li>
-                <li class="nav-link"><a href="#">Teoria</a></li>
-                <li class="nav-link"><a href="#">Projeto</a></li>
-                <li class="nav-link"><a href="#">Conectar-se</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Teoria</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projeto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Conectar-se</a>
+                </li>
             </ul>
-
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
+    
+    <!-- --// PAGINA DE BEM VINDO //--  -->
 
     <section id="page-welcome">
         <div class="welcome-father margin-web">
@@ -48,15 +64,50 @@
         </div>
     </section>
 
+    <!-- --// PAGINA DE SOBRE NOS //-- -->
+
     <section id="section-space"></section>
 
     <section id="page-about-us">
-        
+
+        <img class="svg-cards-about-us" src="./svg/cards-quem-somos.svg" alt="">
+
         <div class="about-us-father margin-web">
 
+            <div class="about-us-child-text">
+
+                <div class="about-us-informations">
+                    <p class="">Sobre Nós</p>
+                    <h2 class="about-us-texto">Já imaginou conseguir monitorar todas as suas máquinas em um só lugar?</h1>
+                    <p class="about-us-texto">Utilizando a nossa aplicação, é possível visualizar todos os Logs e dados de hardware , assim permitindo ter uma visão geral da infraestrutura a partir de:</p>
+                    <ul class="about-us-list">
+                        <li class="about-us-list-item">
+                            <img src="./svg/cubo-about-us.svg" alt="">
+                            <p>Relatos detalhados</p>
+                        </li>
+                        <li class="about-us-list-item">
+                            <img src="./svg/cubo-about-us.svg" alt="">
+                            <p>Análise preditiva</p>
+                        </li>
+                        <li class="about-us-list-item">
+                            <img src="./svg/cubo-about-us.svg" alt="">
+                            <p>Monitoramento 24/7</p>
+                        </li>
+                    </ul>
+                    <button class="about-us-btn">Hover me</button>
+
+                </div>
+            </div>
+
+            <div class="about-us-child-img">
+                <img class="about-us-img" src="./img/mockup-quem-somos.png" alt="">
+            </div>
+
         </div>
+        
 
     </section>
     
+    <script src="./js/script.js"></script>
 </body>
 </html>
