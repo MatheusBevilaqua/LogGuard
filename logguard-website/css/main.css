@@ -10,6 +10,7 @@
 /* IMPORTANDO ESTILZAÇÃO DAS PAGINAS DO SITE */
 @import url(pages/welcome.css);
 @import url(pages/aboutUs.css);
+@import url(pages/dashboard.css);
 
 *,
 *:after,
