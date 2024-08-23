@@ -37,7 +37,32 @@
 }
 
 
-#section-space{
-    width: 100%;
-    height: 30vh;
+@media (min-width: 1440px) {
+    #section-space {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 1440px) {
+    #section-space {
+        height: 23vh;
+    }
+}
+
+@media (max-width: 1140px) {
+    #section-space {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 960px) {
+    #section-space {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    #section-space {
+        height: 17vh;
+    }
 }

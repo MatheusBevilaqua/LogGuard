@@ -14,6 +14,25 @@
     z-index: -1;
 }
 
+@media (max-width: 1440px){
+    .svg-cards-about-us{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1140px){
+    .svg-cards-about-us{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 960px){
+    .svg-cards-about-us{
+        width: 90%;
+    }
+}
+
 .about-us-father{
     display: flex;
     width: 100%;
@@ -96,6 +115,10 @@
         align-items: center;
     }
 
+    .about-us-texto{
+        width: 100%;
+    }
+
     .about-us-child-img{
         width: 90%;
         height: 100%;
@@ -105,7 +128,7 @@
     }
 
     .about-us-img{
-        width: 50%;
+        display: none;
     }
     
 }
@@ -116,7 +139,4 @@
         padding-bottom: var(--gap-3);
     }
 
-    .about-us-img{
-        display: none;
-    }
 }
