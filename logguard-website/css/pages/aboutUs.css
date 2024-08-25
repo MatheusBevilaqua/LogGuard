@@ -9,27 +9,30 @@
 
 .svg-cards-about-us{
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
     z-index: -1;
+
+    width: 70%;
 }
 
 @media (max-width: 1440px){
     .svg-cards-about-us{
-        width: 90%;
+        width: 70%;
     }
 }
 
 @media (max-width: 1140px){
     .svg-cards-about-us{
-        width: 90%;
+        width: 80%;
     }
 }
 
 
 @media (max-width: 960px){
     .svg-cards-about-us{
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -84,8 +87,6 @@
     }
 }
 
-
-
 /* --// LADO DA IMAGEM DA TELA ABOUT US //-- */
 
 .about-us-child-img{
@@ -120,10 +121,7 @@
     }
 
     .about-us-child-img{
-        width: 90%;
-        height: 100%;
-
-        justify-content: center;
+        display: none;
 
     }
 

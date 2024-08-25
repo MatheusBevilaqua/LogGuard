@@ -8,19 +8,19 @@
 
 @media (min-width: 1440px) {
     h1 {
-        font-size: 64px;
-        line-height: 100%;
+        font-size: 48px;
+        line-height: 110%;
         font-weight: 300;
     }
 
     h2 {
-        font-size: 52px;
-        line-height: 100%;
+        font-size: 40px;
+        line-height: 110%;
         font-weight: 300;
     }
 
     h3 {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 120%;
         font-weight: 300;
     }
@@ -32,12 +32,12 @@
     }
 
     h5 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 140%;
         font-weight: 400;
     }
 
-    p, a{
+    p, a {
         font-size: 18px;
         font-weight: 300;        
     }
@@ -45,51 +45,14 @@
 
 @media (max-width: 1440px) {
     h1 {
-        font-size: 56px;
-        line-height: 100%;
-        font-weight: 300; 
-    }
-
-    h2 {
-        font-size: 48px;
-        line-height: 100%;
-        font-weight: 300;
-    }
-
-    h3 {
-        font-size: 32px;
-        line-height: 120%;
-        font-weight: 300;
-    }
-
-    h4 {
-        font-size: 20px;
-        line-height: 130%;
-        font-weight: 300;
-    }
-
-    h5 {
-        font-size: 16px;
-        line-height: 140%;
-        font-weight: 300;
-    }
-
-    p, a{
-        font-size: 16px;
-        font-weight: 300;        
-    }
-}
-
-@media (max-width: 1140px) {
-    h1 {
-        font-size: 48px;
-        line-height: 100%;
-        font-weight: 300;
-    }
-
-    h2 {
         font-size: 40px;
-        line-height: 100%;
+        line-height: 110%;
+        font-weight: 300;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 110%;
         font-weight: 300;
     }
 
@@ -106,27 +69,27 @@
     }
 
     h5 {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 140%;
         font-weight: 300;
     }
 
-    p, a{
-        font-size: 14px;
-        font-weight: 300;
+    p, a {
+        font-size: 16px;
+        font-weight: 300;        
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1140px) {
     h1 {
-        font-size: 40px;
-        line-height: 100%;
+        font-size: 36px;
+        line-height: 110%;
         font-weight: 300;
     }
 
     h2 {
         font-size: 32px;
-        line-height: 100%;
+        line-height: 110%;
         font-weight: 300;
     }
 
@@ -143,27 +106,27 @@
     }
 
     h5 {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 140%;
         font-weight: 300;
     }
 
-    p, a{
+    p, a {
         font-size: 14px;
-        font-weight: 300;        
+        font-weight: 300;
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 960px) {
     h1 {
         font-size: 32px;
-        line-height: 100%;
+        line-height: 110%;
         font-weight: 300;
     }
 
     h2 {
         font-size: 28px;
-        line-height: 100%;
+        line-height: 110%;
         font-weight: 300;
     }
 
@@ -175,6 +138,43 @@
 
     h4 {
         font-size: 16px;
+        line-height: 130%;
+        font-weight: 300;
+    }
+
+    h5 {
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 300;
+    }
+
+    p, a {
+        font-size: 14px;
+        font-weight: 300;        
+    }
+}
+
+@media (max-width: 540px) {
+    h1 {
+        font-size: 28px;
+        line-height: 110%;
+        font-weight: 300;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 110%;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 120%;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 14px;
         line-height: 130%;
         font-weight: 300;
     }
@@ -185,7 +185,7 @@
         font-weight: 300;
     }
 
-    p, a{
+    p, a {
         font-size: 12px;
         font-weight: 300;        
     }

@@ -36,6 +36,12 @@
     }
 }
 
+/* COLOCANDO UMA COR SO PARA VER COMO ESTA SE COMPORTANDO NO SITE */
+/* RETIRAR DEPOIS DO TESTE */
+/* #section-space{
+    background: cyan;
+} */
+
 
 @media (min-width: 1440px) {
     #section-space {
@@ -45,7 +51,7 @@
 
 @media (max-width: 1440px) {
     #section-space {
-        height: 23vh;
+        height: 20vh;
     }
 }
 
