@@ -25,7 +25,7 @@
 .pillars-child-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     width: 100%;
@@ -37,7 +37,7 @@
 .pillars-cards{
     max-width: 375px;
     width: 100%;
-    max-height: 225px;
+    max-height: 290px;
     border-radius: 20px;
     padding: 32px;
     background: #0E0D18;
@@ -47,16 +47,6 @@
 
 .pillars-cards p{
     padding: var(--gap-2) 0;
-}
-
-@media (max-width: 1610px){
-    .pillars-father{
-        gap: 10px;
-    }
-    .pillars-child-container{
-        padding: 70px 50px;
-        justify-content: space-around;
-    }
 }
 
 @media (max-width: 1140px){
