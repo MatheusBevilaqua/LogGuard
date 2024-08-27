@@ -190,3 +190,13 @@
         font-weight: 300;        
     }
 }
+
+
+.bold{
+    font-weight: bold;
+}
+
+.extra-light{
+    font-weight: 100;
+    color: #D9D9D9;
+}
