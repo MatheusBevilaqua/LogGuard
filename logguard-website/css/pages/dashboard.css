@@ -42,27 +42,30 @@
 
 .nav-dash-icon {
     margin-right: 10px;
-    width: 27.5px;
-    height: 22.5px;
+    margin-left: 10px;
 }
 
-.nav-dash-link a {
+.nav-dash-link {
     color: #442BB3; 
     text-decoration: none;
     font-size: 18px;
-    display: block;
+    display: flex;
     padding: 10px 0;
-    border-radius: 8px;
+    border-radius: 70px;
     transition: background-color 0.3s ease;
     flex-grow: 1;
 }
 
-.nav-dash-link a:hover {
-    background-color: #6C2BB3;
-    color: white; /* Texto branco ao passar o mouse */
+.nav-dash-link a{
+    color: inherit;
+    text-decoration: none;
 }
 
-/* Área principal */
+.nav-dash-link:hover {
+    background-color: #442BB3;
+    color: white;
+}
+
 .main-dash-page {
     flex-grow: 1;
     padding: 20px;
