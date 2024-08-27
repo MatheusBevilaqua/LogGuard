@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+ 
+  .autores-footer{
+    margin-right: 30px;
+  }
+  .contato-footer{
+    margin-right: 30px;
+  }
+  .endereco-footer{
+    margin-right: 30px;
+  }
+  
+  .pessoas-footer {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pessoas-footer li {
+    margin-bottom: 10px;
+  }
+  
+  .redes-sociais-footer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .linkedin-footer-img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .github-footer-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
