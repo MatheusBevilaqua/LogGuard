@@ -1,0 +1,23 @@
+.colunaInformações{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.colunaTextos{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardCadastro{
+    width: 40%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: white;
+    border-radius: 25px;
+}
