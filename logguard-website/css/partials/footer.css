@@ -1,66 +1,123 @@
-*{
-    margin: 0;
-    padding: 0;
+body {
+  background-color: #141414;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
+/*footer*/
+footer{
+  width: 100%;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+}
+/*logo-footer*/
+.logo-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 40px 0;
+}
+/*logo-img*/
+.logo-img{
+  width: 5%;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+/*autores-footer*/
+.autores-footer{
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+/*organizar*/
+.organizar{
+  display: flex;
+  flex-direction: row;
 
-.footer {
-    background-color: #222;
-    color: #fff;
-    padding: 30px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  width: 100%;
   
-  .logo-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-  }
-  
- 
-  .autores-footer{
-    margin-right: 30px;
-  }
-  .contato-footer{
-    margin-right: 30px;
-  }
-  .endereco-footer{
-    margin-right: 30px;
-  }
-  
-  .pessoas-footer {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .pessoas-footer li {
-    margin-bottom: 10px;
-  }
-  
-  .redes-sociais-footer {
-    display: flex;
-    align-items: center;
-  }
-  
-  .linkedin-footer-img{
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-  }
-  .github-footer-img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-  }
+}
+/*pessoas-footer*/
+.pessoas-footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+.pessoas-footer li{
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+/*contato-footer*/
+.contato-footer{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+/*endereco-footer*/
+.endereco-footer{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+/*redes-footer*/
+.redes-footer{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+/*redes-sociais-footer*/
+.redes-sociais-footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+/*linkedin-footer-img*/
+.linkedin-footer-img{
+  margin-right: 20px;
+  width: 35px;
+}
+.linkedin-footer-img img{
+  width: 100%;
+}
+/*github-footer-img*/
+.github-footer-img{
+  width: 35px;
+}
+.github-footer-img img{
+  width: 100%;
+}
+/*l*/
+.l{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.l h5{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.l p{
+  font-size: 16px;
+}
