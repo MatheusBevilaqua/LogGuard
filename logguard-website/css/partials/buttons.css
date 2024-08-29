@@ -1,39 +1,21 @@
-.btn-welcome {
-    width: 251px;
-    height: 47px;
-    border: unset;
-    border-radius: 30px;
-    color: #0c0c0c;
-    z-index: 1;
-    background: #e8e8e8;
-    position: relative;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: 0.5s ease;
-    overflow: hidden;
+.create-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--normal-purple), var(--light-purple));
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.5s;
 }
-   
-.btn-welcome::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: var(--dark-blue);
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: 0.5s ease;
+
+.create-btn:hover {
+  background: linear-gradient(90deg, var(--light-purple), var(--normal-purple));
 }
-   
-.btn-welcome:hover {
-    color: #e8e8e8;
-}
-   
-.btn-welcome:hover::before {
-    width: 100%;
+
+.create-btn:active {
+  background: linear-gradient(90deg, var(--dark-purple), var(--normal-purple));
 }
 
 /* BOTÃO COM SETA */
@@ -46,7 +28,7 @@
     cursor: pointer;
     overflow: hidden;
     border: 2px solid white;
-    transition: color 0.5s;
+    transition: 0.5s;
     z-index: 1;
     border-radius: 6px;
     color: white;
