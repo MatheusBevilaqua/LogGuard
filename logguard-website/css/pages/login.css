@@ -1,0 +1,116 @@
+/* --// CUSTOMIZANDO FUNDO LOGIN //-- */
+
+#page-login-user{
+    background: url(../../img/fundo-home.png) no-repeat center center;
+    background-size: cover;
+
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-father{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+.login-child-form{
+    width: 45%;
+    height: 100%;
+    padding: var(--gap-3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+
+/* //-- ESTILIZANDO FORMULARIO DE LOGIN --// */
+.login-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+
+    gap: var(--gap-2);
+    padding: var(--gap-3);
+    border-radius: 10px;
+
+    background: white;
+}
+
+.login-form-img-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+}
+
+.login-form-logo{
+    width: 100px;
+}
+
+.login-form-titulo{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-1);
+    width: 100%;
+}
+
+.login-link-forget{
+    margin-top: -5px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+
+.login-form-btn{
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
+}
+
+.login-link-exit{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    margin-top: var(--gap-1);
+}
+
+
+.login-child-content{
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    padding: var(--gap-3);
+}
+
+.login-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-2);
+}
+
+@media (max-width: 960px){
+    .login-child-content{
+        display: none;
+    }
+
+    .login-child-form{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
