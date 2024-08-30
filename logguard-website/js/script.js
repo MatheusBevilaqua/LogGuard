@@ -19,3 +19,11 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// -- ANIMAÇÃO DE FUNDO -- //
+document.getElementById('register-btn').addEventListener('click', function () {
+    document.body.classList.add('fade-out');
+    setTimeout(function () {
+        window.location.href = '../login.html';
+    }, 500); // Tempo da animação (em ms)
+});
