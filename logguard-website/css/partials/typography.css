@@ -195,7 +195,31 @@
     font-weight: bold;
 }
 
+.extra{
+    font-weight: 100;
+}
+
 .extra-light {
     font-weight: 100;
     color: #D9D9D9;
+}
+
+.black-text{
+    color: var(--dark-black);
+}
+
+.text-purple{
+    color: var(--normal-purple);
+    font-size: 16px;
+}
+
+.link-text{
+    color: var(--normal-purple);
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 200; 
+}
+
+.text-center{
+    text-align: center;
 }

@@ -1,4 +1,8 @@
 :root {
+    --dark-white: #E3E3E3;
+    --normal-white: #fff;
+    --light-white: #fff;
+
     --dark-nav-black: #0c0c0cab;
     --dark-black: #0c0c0c;
     --normal-black: #1c1c1c;
@@ -8,6 +12,8 @@
     --dark-blue: #111E61;
     --normal-blue: #2A40B4;
     --light-blue: #4B5FCE;
+
+    --purple-blue: #442BB3;
 
     --darked-purple: #320A4A;
     --dark-purple: #2E0F4C;
