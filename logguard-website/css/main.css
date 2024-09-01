@@ -15,6 +15,7 @@
 @import url(pages/login.css);
 @import url(pages/dashboard.css);
 @import url(pages/cadastroEmpresa.css);
+@import url(pages/cadastroUsuario.css);
 
 *,
 *:after,

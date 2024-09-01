@@ -1,40 +1,77 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Empresa</title>
+    <title>LogGuard Cadastro</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body> 
-    <section id="page-welcome"> <!--sessao cadastro empresa-->
+<body>
+    <section id="page-cadastro-ind">
 
-        <div class="colunaInformacoes"> 
-            <img src="" alt=""> <!--logo - log guard-->
-            <div> <!--card-->
-                <h1>Bem vindo!</h1><br>
-                <h5>Insira os dados para criar uma conta de acesso...</h5>
-                <div></div> <!--nome empresa-->
-                <div></div> <!--cnpj-->
-                <div></div> <!--cnpj-->
-                <div></div> <!--email-->
-                <div></div> <!--senha-->
-                <div></div> <!--c/senha-->
-                <button onclick="cadastrar()">Concluído</button>
-                <p>Já tem uma conta?<u>Faça o login</u></p> <!--chamando para login-->
-            </div>
-            <div> <!--voltar para pagina inicial-->
-                <img src="" alt=""> <!--triangulo(seta)-->
-                <p>Página inicial</p>
+        <div class="father-cadastro-ind">
+            <div class="cadastro-child-form">
+                <div class="cadastro-ind-form">
+                    <div class="cadastro-ind-form-logo">
+                        <img class="cadastro-form-logo" src="./img/logo-preta-transparent.png" alt="">
+                    </div>
+
+                    <div class="cadastro-form-titulo">
+                        <h2 class="bold black-text">Bem Vindo!</h2>
+                        <p class="black-text">Insira os dados abaixo para cadastrar sua empresa...</p>
+                    </div>
+
+                    <label class="login-form-box">
+                        <span class="icon">
+                            <img src="./svg/gmail-icon.svg" alt="">
+                        </span>
+                        <input type="text" class="login-form-input black-text" placeholder="Digite seu e-mail" autocomplete="off"/>
+                    </label>
+
+                    <label class="cadastro-ind-form-box">
+                        <span class="icon">
+                            <img src="./svg/key-icon.svg" alt="">
+                        </span>
+                        <input type="text" class="cadastro-form-input black-text" placeholder="CNPJ" autocomplete="off"/>
+                    </label>
+
+                    <label class="cadastro-ind-form-box">
+                        <span class="icon">
+                            <img src="./svg/key-icon.svg" alt="">
+                        </span>
+                        <input type="text" class="cadastro-form-input black-text" placeholder="Nome do responsável" autocomplete="off"/>
+                    </label>
+
+                    <label class="cadastro-ind-form-box">
+                        <span class="icon">
+                            <img src="./svg/gmail-icon.svg" alt="">
+                        </span>
+                        <input type="text" class="cadastro-form-input black-text" placeholder="Email do responsável" autocomplete="off"/>
+                    </label>
+
+                    <label class="cadastro-ind-form-box">
+                        <span class="icon">
+                            <img src="./svg/key-icon.svg" alt="">
+                        </span>
+                        <input type="text" class="cadastro-form-input black-text" placeholder="Senha" autocomplete="off"/>
+                    </label>
+
+                    <label class="cadastro-ind-form-box">
+                        <span class="icon">
+                            <img src="./svg/key-icon.svg" alt="">
+                        </span>
+                        <input type="text" class="cadastro-form-input black-text" placeholder="Confirme a senha" autocomplete="off"/>
+                    </label>
+
+
+
+
+                </div>
             </div>
         </div>
-        <div>
-            <h1>Cadastre sua empresa!</h1>
-            <h3>Certifique-se de que o e-mail cadastrado seja responsável por responder a qualquer assunto referente a contratação do serviço.</h3>
-            <h3>O e-mail e senha cadastrados aqui são utilizados para acesso futuro a dashboard!</h3>
-        </div>
+
     </section>
 </body>
 
