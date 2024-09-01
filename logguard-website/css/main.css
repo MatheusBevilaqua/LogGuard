@@ -60,10 +60,6 @@ body {
     transition: opacity 0.5s ease;
 }
 
-.fade-out {
-    opacity: 0;
-}
-
 section{
     width: 100vw;
     height: 100vh;

@@ -4,8 +4,8 @@
   justify-content: center;
   background: var(--purple-blue);
   border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
+  border-radius: 20px;
+  padding: 12px 26px;
   cursor: pointer;
   transition: 0.5s;
 }
