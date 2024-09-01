@@ -14,7 +14,7 @@
 .father-cadastro-ind {
     width: 100%;
     height: 100%;
-
+    
     display: flex;
 }
 
@@ -22,7 +22,7 @@
     width: 45%;
     height: 100%;
     padding: var(--gap-3);
-
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,9 +35,9 @@
     flex-direction: column;
     max-width: 500px;
     width: 100%;
-    max-height: 500px;
+    max-height: 600px;
     height: 100%;
-
+   
     gap: var(--gap-2);
     padding: var(--gap-3);
     border-radius: 10px;
@@ -61,8 +61,9 @@
 .cadastro-form-titulo {
     display: flex;
     flex-direction: column;
-    gap: var(--gap-1);
+    /* gap: var(--gap-1); */
     width: 100%;
+    font-size: 20px;
 }
 
 .cadastro-form-box {
@@ -93,4 +94,37 @@
     font-size: 16px;
   }
 
+  .login-form-btn{
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
+}
+
+.login-child-content{
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    padding: var(--gap-3);
+}
+
+.login-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-2);
+}
+
+@media (max-width: 960px){
+    .login-child-content{
+        display: none;
+    }
+
+    .login-child-form{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
