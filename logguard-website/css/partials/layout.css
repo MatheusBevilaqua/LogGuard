@@ -6,12 +6,20 @@
         margin: 0px 120px;
         max-width: 1680px;
     }
+
+    #section-space {
+        height: 20vh;
+    }
 }
 
 @media (max-width: 1440px){
     .margin-web{
         margin: 0px 100px;
         max-width: 1440px;
+    }
+
+    #section-space {
+        height: 20vh;
     }
 }
 
@@ -20,12 +28,20 @@
         margin: 0px 80px;
         max-width: 1440px;
     }
+
+    #section-space {
+        height: 20vh;
+    }
 }   
 
 @media (max-width: 960px){
     .margin-web{
         margin: 0px 60px;
         max-width: 1440px;
+    }
+
+    #section-space {
+        display: none;
     }
 }
 
@@ -34,40 +50,7 @@
         margin: 0px 20px;
         max-width: 1440px;
     }
-}
 
-/* COLOCANDO UMA COR SO PARA VER COMO ESTA SE COMPORTANDO NO SITE */
-/* RETIRAR DEPOIS DO TESTE */
-/* #section-space{
-    background: cyan;
-} */
-
-
-@media (min-width: 1440px) {
-    #section-space {
-        height: 20vh;
-    }
-}
-
-@media (max-width: 1440px) {
-    #section-space {
-        height: 20vh;
-    }
-}
-
-@media (max-width: 1140px) {
-    #section-space {
-        height: 20vh;
-    }
-}
-
-@media (max-width: 960px) {
-    #section-space {
-        display: none;
-    }
-}
-
-@media (max-width: 540px) {
     #section-space {
         height: 17vh;
     }

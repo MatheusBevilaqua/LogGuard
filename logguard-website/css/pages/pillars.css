@@ -65,3 +65,9 @@
         padding: 50px 20px;
     }
 }
+
+@media (max-height: 700px){
+    #three-pillars{
+        height: 135vh;
+    }
+}
