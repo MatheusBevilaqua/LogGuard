@@ -12,6 +12,7 @@
 @import url(pages/aboutUs.css);
 @import url(pages/pillars.css);
 @import url(pages/theory.css);
+@import url(pages/project.css);
 @import url(pages/login.css);
 @import url(pages/dashboard.css);
 @import url(pages/cadastroEmpresa.css);
@@ -62,8 +63,8 @@ body {
 }
 
 section{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding-top: 65px;
 }
 
