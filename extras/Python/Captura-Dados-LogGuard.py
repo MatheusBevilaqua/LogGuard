@@ -4,50 +4,55 @@ import psutil as ps
 from mysql.connector import connect, Error
 
 def main(): # Função principal, fiz assim por questão de organização
-    imprimeMenu("Olá, Bem vindo(a)! Aqui está a captura de dados em tempo real de: Uso de CPU, Uso de RAM, Uso de Disco, Conexões Abertas em Rede, e Tempo de atividade!", 2.5)
-    print("\n------------------------------------------------------ USO DE HARDWARE ------------------------------------------------------\n")
-    print(formataLinha('CPU (%)','Uso RAM', 'RAM Livre', 'Uso Disco', 'Disco Livre', 'Conexões Rede', 'Tempo Atividade'))
-    print('-' * 150)
+    imprimeMenu("Olá, Bem vindo(a)! Aqui está a captura de dados em tempo real de: Uso de CPU, Uso de RAM, Uso de Disco, Conexões Abertas em Rede, e Tempo de atividade!")
+    escolha = input("Você deseja que os dados capturados sejam inseridos no Banco de Dados (S/N)? ")
+    habilitarInsercao = False
+    time.sleep(2.5)
+    print("\n------------------ USO DE HARDWARE ------------------\n")
+    print(formataLinha('CPU (%)', 'RAM (%)', 'Conexões', 'Tempo Atividade'))
+    print('-' * 60)
+
+    if(escolha.lower() == "s"):
+        habilitarInsercao = True
+
     while True:
-        #Coleta e exibe os dados do sistema
+        # Coleta e exibe os dados do sistema
         dados = obterDadosSistema()
+        # Caso o usuário queira, insere no banco de dados aqui:
+        if (habilitarInsercao):
+            query = montaQuery(*dados)
+            executarQuery(query)
         # Imprime os dados na tabela
         print(formataLinha(*dados)) # Utilizando o "*" como forma de "expandir" a tupla em dados separados, pois se passasse sem isso, ficaria apenas 1 tupla inteira como parâmetro.
         # Aguarda 2 segundos antes de atualizar
         time.sleep(2)
 
-def executarQuery(script): # Função responsável por inserir os dados no banco, recebe uma query SQL qualquer como parãmetro e a executa, usando as credenciais específicas
-
-    # Função fornecida pelo professor, estudei a função e só fiz 1 alteração.
-    # Agora esta função retorna as linhas obtidas pela query
-
+def executarQuery(script): # Função responsável por inserir os dados no banco, recebe uma query SQL qualquer como parâmetro e a executa, usando as credenciais específicas
     config = {
       'user': 'root',
       'password': '2205',
       'host': 'localhost',
-      'database': 'LogGuard'
+      'database': 'Python'
     }
 
     try:
       db = connect(**config)
       if db.is_connected():
         db_info = db.get_server_info()
-        print('Connected to MySQL server version -', db_info)
+        # print('Connected to MySQL server version -', db_info)
 
         with db.cursor() as cursor:
-          result = cursor.execute(script)
-          rows = cursor.fetchall()
-          for rows in rows:
-            print(rows)
+          cursor.execute(script)
+          db.commit()  # Confirma a transação no banco de dados
+          # print("Dados inseridos com sucesso!")
 
         cursor.close()
         db.close()
-        return rows
 
     except Error as e:
-      print('Error to connect with MySQL -', e)
+      print('Erro ao conectar com o MySQL -', e)
 
-def imprimeMenu(texto, tempo): # Função responsável por imprimir o menu inicial, contém o nosso nome em ASCII ART, recebe os parâmetros de: texto a ser impresso e tempo a esperar após imprimir
+def imprimeMenu(texto): # Função responsável por imprimir o menu inicial, contém o nosso nome em ASCII ART, recebe os parâmetros de: texto a ser impresso e tempo a esperar após imprimir
     print(""" 
 █████                           █████████                                     █████
 ░░███                           ███░░░░░███                                   ░░███ 
@@ -62,7 +67,6 @@ def imprimeMenu(texto, tempo): # Função responsável por imprimir o menu inici
                       ░░░░░░   
 """)
     print(texto)
-    time.sleep(tempo)
 
 def formataLinha(*args): # Função de formatação utilizada nas tabelas, espera n parâmetros, ou seja, um número variável de parâmetros, denotado pelo uso de "*" antes do nome do argumento esperado
     # a parte de ' | '.join(...) é responsável por juntar os elementos da sequência fornecida com o separador "|"
@@ -76,13 +80,10 @@ def obterDadosSistema(): # Aqui, colho os dados por componente separadamente:
 
     # Uso de RAM
     memoria = ps.virtual_memory()
-    totalMemoria = memoria.total / (1024 ** 3)  # Convertendo de bytes para GB
-    memoriaUsada = memoria.used / (1024 ** 3)  # Convertendo de bytes para GB
-    memoriaLivre = memoria.free / (1024 ** 3)  # Convertendo de bytes para GB
+    porcentagemMemoria = memoria.percent
 
     # Uso de Disco
     usoDisco = ps.disk_usage('/')
-    totalDisco = usoDisco.total / (1024 ** 3)  # Convertendo de bytes para GB
     usadoDisco = usoDisco.used / (1024 ** 3)  # Convertendo de bytes para GB
     livreDisco = usoDisco.free / (1024 ** 3)  # Convertendo de bytes para GB
 
@@ -94,8 +95,10 @@ def obterDadosSistema(): # Aqui, colho os dados por componente separadamente:
     tempoAtividade = time.time() - uptime # time.time() -> Retorna o tempo atual em segundos desde a época
     tempoAtividadeStr = time.strftime("%H:%M:%S", time.gmtime(tempoAtividade)) # Formata o tempo, no formato HH:MM:SS
 
-    return (f'{porcentagemCpu}%', f'{memoriaUsada:.2f} GB', f'{memoriaLivre:.2f} GB',
-            f'{usadoDisco:.2f} GB', f'{livreDisco:.2f} GB', conexoesRede, tempoAtividadeStr) # Retorno da função, a tupla com todos os dados em ordem.
+    return (porcentagemCpu, porcentagemMemoria, conexoesRede, tempoAtividadeStr) # Retorno da função, a tupla com todos os dados em ordem.
+
+def montaQuery(*dados):
+    return "INSERT INTO DadoCapturado (`CPU%`, `RAM%`, `ConexoesRede`, `TempoAtividade`) VALUES ('{}', '{}', '{}', '{}')".format(*dados)
 
 # Como quis rodar o arquivo pela função "main()", preciso fazer isso:
 # A variável "__name__" é uma variável que tem seu valor atribuído automaticamente pelo Python.
