@@ -6,7 +6,6 @@
 .father-project{
     width: 100%;
     height: 100%;
-    background: red;
 
     display: flex;
 }
@@ -14,7 +13,6 @@
 .child-project-text{
     width: 50%;
     height: 100%;
-    background: green;
     padding-left: var(--gap-5);
     gap: var(--gap-3);
 
@@ -26,7 +24,7 @@
 .child-project-cads{
     width: 50%;
     height: 100%;
-    background: purple;
+    position: relative;
 
     display: flex;
     justify-content: center;
@@ -36,9 +34,62 @@
 .project-cards-svg{
     display: flex;
     width: 70%;
+    z-index: 2;
 }
 
 .project-text-area{
     width: 67%;
-    background: yellow;
+}
+
+.project-cicle-blur{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(68, 43, 179, 0.479);
+    filter: blur(80px);
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    z-index: 1;
+}
+
+@media (max-width: 1140px){
+    .project-text-area{
+        width: 90%;
+    }
+    .child-project-text{
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 960px){
+    #child-project-cards-text{
+        display: none;
+    }
+}
+
+@media (max-width: 960px){
+    .father-project{
+        flex-direction: column;
+    }
+    #child-project-cards-svg{
+        display: none;
+    }
+    .child-project-text{
+        width: 100%;
+        gap: var(--gap-1);
+        padding: 0;
+        align-items: center;
+    }
+    .project-text-area{
+        width: 70%;
+    }
+
+    .child-project-cads{
+        width: 50%;
+        height: auto;
+    }
 }
