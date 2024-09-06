@@ -6,9 +6,10 @@ body {
 /*footer*/
 footer{
   width: 100%;
-  background-color: #141414;
+  background-color: #0E0D18;
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 /*logo-footer*/
 .foooter{
