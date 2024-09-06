@@ -56,6 +56,17 @@
     z-index: 1;
 }
 
+@media (max-width: 1440px){
+    .child-project-text{
+        padding-left: 0;
+        gap: var(--gap-3);
+    }
+
+    .project-text-area{
+        width: 80%;
+    }
+}
+
 @media (max-width: 1140px){
     .project-text-area{
         width: 90%;
@@ -91,5 +102,21 @@
     .child-project-cads{
         width: 50%;
         height: auto;
+    }
+}
+
+@media (max-width: 540px){
+    .child-project-text{
+        padding-left: 0;
+        gap: var(--gap-2);
+    }
+
+    .project-text-area{
+        width: 100%;
+    }
+
+    .project-cards-svg{
+        max-width: 150px;
+        width: 100%;
     }
 }
