@@ -7,40 +7,45 @@ body {
 /*footer*/
 footer {
   width: 100%;
-  height: 20%;
+  height: auto;
   background-color: #0E0D18;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-left: 10%;
-  padding-right: 10%;
+  gap: var(--gap-5);
+  padding: var(--gap-3) 10%;
 
 }
 
 /*logo-img*/
-.logo-img {
-  height: 60px;
-
-}
-
 .logo {
+  min-width: 150px;
   width: 12%;
+  height: 135px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;  
+}
+
+.logo-img {
+  width: 100%;
+
 }
 
 .alinhamento {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-2);
   width: 100%;
   flex-direction: row;
   align-items: start;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 /*autores-footer*/
 .autores-footer {
+  min-width: 150px;
   width: 15%;
   display: flex;
   flex-direction: column;
@@ -53,6 +58,7 @@ footer {
 .organizar {
   display: flex;
   flex-direction: row;
+  gap: var(--gap-1);
 
   width: 100%;
 
@@ -62,6 +68,7 @@ footer {
 .pessoas-footer {
   display: flex;
   flex-direction: column;
+  gap: var(--gap-1);
   width: 100%;
   margin: 0;
   /* padding: 5px; */
@@ -76,7 +83,7 @@ footer {
 
 /*contato-footer*/
 .contato-footer {
-  /* width: 20%; */
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -85,7 +92,7 @@ footer {
 
 /*endereco-footer*/
 .endereco-footer {
-  /* width: 20%; */
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -94,6 +101,7 @@ footer {
 
 /*redes-footer*/
 .redes-footer {
+  min-width: 150px;
   /* width: 20%; */
   display: flex;
   flex-direction: column;
@@ -137,4 +145,10 @@ footer h5 {
 
 footer p {
   font-size: 11px;
+}
+
+@media (max-width: 400px){
+  .alinhamento{
+    justify-content: center;
+  }
 }
