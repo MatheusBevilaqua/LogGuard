@@ -151,4 +151,20 @@ footer p {
   .alinhamento{
     justify-content: center;
   }
+
+  .autores-footer {
+    min-width: 200px;
+  }
+
+  .contato-footer {
+    min-width: 200px;
+  }
+
+  .endereco-footer {
+    min-width: 200px;
+  }
+
+  .redes-footer {
+    min-width: 200px;
+  }
 }
